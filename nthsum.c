@@ -1,9 +1,14 @@
 #include<stdio.h>
-int main()
+void main()
 {
-	int n;
-	printf("enter a number");
+	int n,sum;
+	printf("enter the number");
 	scanf("%d",&n);
-	printf("the sum is %d",(n*(n+1))/2);
-	
+	while(n>0)
+	{
+	sum=sum+n;
+	n--;	
+		
+	}
+	printf("%d",sum);
 }
