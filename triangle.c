@@ -2,21 +2,23 @@
 int main()
 {
 	int a,b,c;
-	printf("enter the length of three sides of triangle");
+	printf("three sides of the triangle");
 	scanf("%d %d %d",&a,&b,&c);
-	if(a+b>c)
+	if(a == b && a== c)
 	{
-		printf("the triangle is valid");
+		printf("equilateral triangle");
 	}
-	else if(c+a>b)
+	//else if(a==b||a==c||b==c)
+	//{
+	//	printf("isosceles trangle");
+	//}
+	else if(a!=b&&a!=c)
 	{
-		printf("valid");
+	printf("scalene");	
 	}
-	else if(b+c>a)
-	{ printf("valid");
-	}
+	
 	else
 	{
-		printf("not valid");
+		printf("isosceles triangle");
 	}
 }

@@ -1,22 +1,28 @@
 #include<stdio.h>
 int main()
 {
-	int hr,min;
-	printf("enter in hours");
-	printf("enter in minutes");
-	scanf("%d %d",&hr,&min);
-	if(hr>=1&&hr<12)
+	int h;
+	printf("enter the hour");
+	scanf("%d",&h);
+	if(h>=4&&h<12)
 	{
-	printf("%dhr:%dminAM",hr,min);
-    }
-    else if(hr>12&&hr<=24)
-    {
-    	printf("%d:%dPM",hr-12,min);
+	printf("good morning");	
+	}
+	else if(h>=12&&h<16)
+	{
+		printf("good afternoon");
+	}
+	else if(h>=16&&h<20)
+	{
+		printf("good evening");
+	}
+	else if(h>=20&&h<24&&h>=1&&h<4)
+	{
+		printf("good night");
 	}
 	else
 	{
-		printf("not input correct time");
+		printf("you enter the wrong hours");
 	}
-}
-
 	
+}
